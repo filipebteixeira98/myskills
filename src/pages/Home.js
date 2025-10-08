@@ -6,7 +6,7 @@ export function Home() {
     <>
       <View style={styles.container}>
         <Text style={styles.title}>Welcome, John!</Text>
-        <TextInput style={styles.input} />
+        <TextInput style={styles.input} placeholder='New skill' placeholderTextColor="#555" />
       </View>
     </>
   );
