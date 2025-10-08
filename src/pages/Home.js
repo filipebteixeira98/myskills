@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { Text, StyleSheet, SafeAreaView } from 'react-native';
 
 export function Home() {
   return (
     <Fragment>
-      <View style={styles.container}>
-        <Text>Welcome, John!</Text>
-      </View>
+      <SafeAreaView style={styles.container}>
+        <Text style={styles.title}>Welcome, John!</Text>
+      </SafeAreaView>
     </Fragment>
   );
 }
@@ -16,5 +16,9 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#121015',
   },
+  title: {
+    color: '#fff',
+  }
 });
