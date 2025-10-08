@@ -1,24 +1,35 @@
-import React, { Fragment } from 'react';
-import { Text, StyleSheet, SafeAreaView } from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet, TextInput } from 'react-native';
 
 export function Home() {
   return (
-    <Fragment>
-      <SafeAreaView style={styles.container}>
+    <>
+      <View style={styles.container}>
         <Text style={styles.title}>Welcome, John!</Text>
-      </SafeAreaView>
-    </Fragment>
+        <TextInput style={styles.input} />
+      </View>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
     backgroundColor: '#121015',
+    paddingVertical: 70,
+    paddingHorizontal: 30,
   },
   title: {
     color: '#fff',
-  }
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  input: {
+    backgroundColor: '#1f1e25',
+    color: '#fff',
+    fontSize: 18,
+    padding: 15,
+    marginTop: 30,
+    borderRadius: 7,
+  },
 });
