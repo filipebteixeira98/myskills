@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TextInput, Platform } from 'react-native';
+import { View, Text, StyleSheet, TextInput, Platform, TouchableOpacity } from 'react-native';
 
 export function Home() {
   return (
@@ -7,6 +7,9 @@ export function Home() {
       <View style={styles.container}>
         <Text style={styles.title}>Welcome, John!</Text>
         <TextInput style={styles.input} placeholder='New skill' placeholderTextColor="#555" />
+        <TouchableOpacity style={styles.button} activeOpacity={0.7}>
+          <Text style={styles.buttonText}>Add</Text>
+        </TouchableOpacity>
       </View>
     </>
   );
@@ -32,4 +35,16 @@ const styles = StyleSheet.create({
     marginTop: 30,
     borderRadius: 7,
   },
+  button: {
+    backgroundColor: '#a370f7',
+    padding: 15,
+    borderRadius: 7,
+    alignItems: 'center',
+    marginTop: 20,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 17,
+    fontWeight: 'bold',
+  }
 });
