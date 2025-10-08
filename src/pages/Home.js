@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TextInput } from 'react-native';
+import { View, Text, StyleSheet, TextInput, Platform } from 'react-native';
 
 export function Home() {
   return (
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#1f1e25',
     color: '#fff',
     fontSize: 18,
-    padding: 15,
+    padding: Platform.OS === 'ios' ? 15 : 10,
     marginTop: 30,
     borderRadius: 7,
   },
