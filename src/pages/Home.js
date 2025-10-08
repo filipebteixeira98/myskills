@@ -10,6 +10,7 @@ export function Home() {
         <TouchableOpacity style={styles.button} activeOpacity={0.7}>
           <Text style={styles.buttonText}>Add</Text>
         </TouchableOpacity>
+        <Text style={[styles.title, { marginTop: 50 }]}>My Skills</Text>
       </View>
     </>
   );
