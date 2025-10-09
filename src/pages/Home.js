@@ -18,10 +18,10 @@ export function Home() {
       <View style={styles.container}>
         <Text style={styles.title}>Welcome, John!</Text>
         <TextInput style={styles.input} placeholder='New skill' placeholderTextColor="#555" onChangeText={setNewSkill} />
-        <Button />
+        <Button onPress={handleAddNewSkill} />
         <Text style={[styles.title, { marginVertical: 50 }]}>My Skills</Text>
         {mySkills.map((skill) => (
-          <SkillCard />
+          <SkillCard key={skill} skill={skill} />
         ))}
       </View>
     </>
