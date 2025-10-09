@@ -25,7 +25,7 @@ export function Home() {
     } else {
       setGreeting('Good night 🌙');
     }
-  }, [mySkills]);
+  }, []);
 
   return (
     <>
