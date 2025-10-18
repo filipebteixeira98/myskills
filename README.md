@@ -1,97 +1,118 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+<p align="center">
+  <img src="./.github/logo.png" alt="Logo myskills" width="150"/>
+  <br>
+</p>
 
-# Getting Started
+<h3 align="center">
+myskills
+</h3>
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+<p align="center">
+  <img src="https://img.shields.io/github/license/filipebteixeira98/myskills?color=blueviolet&logo=License&style=for-the-badge"/>
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/filipebteixeira98/myskills?color=blueviolet&logo=openjdk&logoColor=white&style=for-the-badge">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/filipebteixeira98/myskills?color=blueviolet&style=for-the-badge">
+</p>
 
-## Step 1: Start Metro
+**A Mobile Application for Personal Skill Inventory**
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## 💡 Overview
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+The application myskills is a cross-platform mobile application developed using **React Native CLI** that provides users with a dedicated platform to **register their personal and professional skills**.
 
-```sh
-# Using npm
-npm start
+Tired of forgetting that one specific technology or hobby you picked up? This app acts helping you easily review your full capability set.
 
-# OR using Yarn
-yarn start
-```
+<p align="center">
+    <img src="./.github/layout.png" alt="Empty home" width="150" />
+    <br>
+</p>
 
-## Step 2: Build and run your app
+## ✨ Key Features
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+* **Skill Registration:** Easily add new skills with names (e.g., Programming, Language, Soft Skill).
 
-### Android
+## 🏗️ Technical Stack
 
-```sh
-# Using npm
-npm run android
+This project was bootstrapped using the **React Native CLI** method, ensuring fine-grained control over native modules and performance.
 
-# OR using Yarn
+* **Framework:** [React Native](https://reactnative.dev/) (using the CLI setup)
+* **Language:** [TypeScript](https://www.typescriptlang.org/)
+* **Styling:** [StyleSheet](https://reactnative.dev/docs/stylesheet)
+
+## ⚙️ Local Development & Setup
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing.
+
+### Prerequisites
+
+You need to have the following installed:
+
+1.  **Node.js** (LTS version recommended)
+2.  **Yarn** or **npm**
+3.  **React Native Environment:** Follow the official guide for setting up the **React Native CLI** development environment for **Android** and/or **iOS**.
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/filipebteixeira98/myskills
+    cd myskills
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    # Using yarn
+    yarn install
+
+    # Or using npm
+    npm install
+    ```
+
+### Running the App
+
+#### Android
+
+```bash
+# Start the Metro bundler
+yarn start 
+
+# In a new terminal, run the app on an emulator or connected device
 yarn android
 ```
 
 ### iOS
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+**Note: Requires a macOS machine.**
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+```bash
+# Install CocoaPods dependencies:
+cd ios && pod install && cd ..
 
-```sh
-bundle install
-```
+# Start the Metro bundler
+yarn start 
 
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
+# In a new terminal, run the app on a simulator
 yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## 🤝 Contribution
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-## Step 3: Modify your app
+### Fork the Project.
 
-Now that you have successfully run the app, let's make changes!
+```bash
+# Create your Feature Branch
+git checkout -b feature/AmazingFeature
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+# Commit your Changes
+git commit -m 'Add some AmazingFeature'
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+# Push to the Branch 
+git push origin feature/AmazingFeature
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+# Open a Pull Request.
+```
 
-## Congratulations! :tada:
+## 📄 License
 
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Distributed under the MIT License. See LICENSE for more information.
